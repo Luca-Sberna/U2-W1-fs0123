@@ -169,15 +169,29 @@ h1 {
 
 }
 
-main b {
+h1 b {
+  position: relative;
+  display: inline-block;
+}
+
+h1 b::after {
+  content: '';
   background-image: url(../img/underline.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
-
-
-
-
+  position: absolute;
+  height: 1.6rem;
+  bottom: -0.725rem;
+  right: -0.5rem;
+  background-size: cover;
+  left: 0;
+  opacity: 0.6;
 }
+
+
+
+
+
+
 
 
 p,
