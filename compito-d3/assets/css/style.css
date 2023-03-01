@@ -207,15 +207,25 @@ main .btn {
         display: flex;
     }
 
+    main .card img {}
+
     main .description {
-        font-size: 14px;
+        font-size: 11px;
         max-width: 100%;
+        /* margin-inline: 0.1rem; */
 
     }
 
+    main .description b {
+        font-size: 13px;
+        display: flex;
+    }
+
     main .description .price {
-        padding-top: 1.5rem;
-        margin-right: 8px
+        padding-top: 1.2rem;
+        margin-right: 8px;
+        font-size: 12px;
+
     }
 
     main .btn {
