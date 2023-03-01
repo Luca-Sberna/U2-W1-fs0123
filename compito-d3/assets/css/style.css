@@ -8,10 +8,9 @@ body {
     background-color: rgb(255, 254, 243);
     flex-wrap: wrap;
     justify-content: center;
-    height: 15rem;
+    height: 13rem;
     padding: 1rem;
     margin-block: 1rem;
-    flex-grow: 1;
     margin-inline: 0.5rem;
 }
 
@@ -25,9 +24,10 @@ header img {
     order: -1;
     flex-grow: 6;
     text-transform: uppercase;
-    padding: 1.5rem 3.8rem;
+    padding: 1.5rem 3.4rem;
     font-size: 1.5rem;
     flex-basis: 100%;
+    flex-shrink: 3;
 }
 
 .nav-link {
@@ -47,26 +47,40 @@ header img {
 /* header */
 @media screen and (min-width:575px) {
     #nav {
+        display: flex;
         border-radius: unset;
         margin: unset;
         flex-wrap: unset;
         padding: unset;
         height: unset;
         padding: 1.5rem 0;
-    }
-
-    #first-link {
-        order: unset;
-        flex-basis: unset;
-        padding: 1rem 2rem;
 
     }
-
 
     .nav-link {
         flex-basis: unset;
+        flex-shrink: 0;
 
     }
+
+    #first-link {
+        display: flex;
+        order: unset;
+        flex-basis: unset;
+        padding: 1rem 9px;
+        flex-shrink: 1;
+        font-size: 1.4rem;
+        justify-content: center;
+    }
+
+    header img {
+        margin-inline: 5px;
+        max-width: 35px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    #nav {}
 }
 
 
@@ -148,16 +162,36 @@ main .btn {
         display: inline-block;
         margin-block: unset;
         margin-inline: unset;
-        vertical-align: middle;
+
     }
-
-
-
-
-
 
 }
 
+@media screen and (min-width:767px) {
+    .card {}
+
+    .cards {
+        display: flex;
+    }
+
+    main .description {
+        font-size: 14px;
+        max-width: 100%;
+
+    }
+
+    main .description .price {
+        padding-top: 1.5rem;
+        margin-right: 8px
+    }
+
+    main .btn {
+        width: 4.9rem;
+        font-size: 14px;
+        padding: 0.5rem 0.3rem;
+    }
+
+}
 
 
 main h2 {
