@@ -1,0 +1,158 @@
+body {
+    margin: 0 auto;
+}
+
+#nav {
+    display: flex;
+    border-radius: 5rem;
+    background-color: rgb(255, 254, 243);
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 15rem;
+    padding: 1rem;
+    margin-block: 1rem;
+    flex-grow: 1;
+    margin-inline: 0.5rem;
+}
+
+header img {
+    max-width: 40px;
+    margin-inline: 1rem;
+    vertical-align: middle;
+}
+
+#first-link {
+    order: -1;
+    flex-grow: 6;
+    text-transform: uppercase;
+    padding: 1.5rem 3.8rem;
+    font-size: 1.5rem;
+    flex-basis: 100%;
+}
+
+.nav-link {
+
+    border-radius: 3rem;
+    padding: 0.7rem 1.2rem;
+    background-color: yellow;
+    text-align: center;
+    margin-block: auto;
+    color: brown;
+    font-weight: bold;
+    margin-inline: auto;
+    flex-direction: column;
+    flex-basis: 33%;
+    max-width: 20rem;
+}
+
+@media screen and (min-width:575px) {
+    #nav {
+        border-radius: unset;
+        margin: unset;
+    }
+
+    #first-link {}
+
+    .nav-link {
+        flex-basis: unset;
+        justify-content: space-between;
+    }
+}
+
+
+
+main h1 {
+    text-align: center;
+    width: 15rem;
+    margin-inline: auto;
+    color: brown;
+    font-weight: bold;
+}
+
+
+main .card {
+
+    flex-basis: 100%;
+    border: 1px transparent;
+    border-radius: 2rem;
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    background-color: rgb(255, 254, 243);
+    padding: 0 0 1rem 0;
+}
+
+main .card img {
+    max-width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+}
+
+main .description {
+    display: flex;
+    color: brown;
+    max-width: 80%;
+    display: flex;
+    text-align: center;
+
+}
+
+main .description b {
+    font-size: 18px;
+
+}
+
+main .description .price {
+    display: flex;
+    color: brown;
+    font-weight: bold;
+
+
+
+}
+
+main .btn {
+    display: flex;
+    border-radius: 3rem;
+    padding: 0.5rem 1.2rem;
+    background-color: yellow;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    flex-direction: column;
+    width: 40%;
+    color: brown;
+    margin-inline: auto;
+
+}
+
+main h2 {
+    text-align: center;
+    margin-inline: auto;
+    color: brown;
+    font-weight: bold;
+
+}
+
+.box {
+    padding: 0.2rem 1.5rem;
+    background-color: rgb(255, 254, 243);
+    border-radius: 3rem;
+    margin-inline: 1rem;
+
+
+}
+
+.box h3,
+p {
+    color: brown;
+    margin-inline: auto;
+}
+
+.box img {
+    display: flex;
+    max-width: 98%;
+    margin-inline: auto;
+    margin-block: auto;
+    height: auto;
+    padding-bottom: 2rem;
+}
