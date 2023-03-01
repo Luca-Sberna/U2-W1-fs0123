@@ -39,23 +39,33 @@ header img {
     margin-block: auto;
     color: brown;
     font-weight: bold;
-    margin-inline: auto;
-    flex-direction: column;
     flex-basis: 33%;
     max-width: 20rem;
+    margin-inline: 3px;
 }
 
+/* header */
 @media screen and (min-width:575px) {
     #nav {
         border-radius: unset;
         margin: unset;
+        flex-wrap: unset;
+        padding: unset;
+        height: unset;
+        padding: 1.5rem 0;
     }
 
-    #first-link {}
+    #first-link {
+        order: unset;
+        flex-basis: unset;
+        padding: 1rem 2rem;
+
+    }
+
 
     .nav-link {
         flex-basis: unset;
-        justify-content: space-between;
+
     }
 }
 
@@ -73,7 +83,6 @@ main h1 {
 main .card {
 
     flex-basis: 100%;
-    border: 1px transparent;
     border-radius: 2rem;
     margin-block: 1rem;
     margin-inline: 1rem;
@@ -88,7 +97,7 @@ main .card img {
 }
 
 main .description {
-    display: flex;
+    display: block;
     color: brown;
     max-width: 80%;
     display: flex;
@@ -98,14 +107,14 @@ main .description {
 
 main .description b {
     font-size: 18px;
-
+    display: flex;
 }
 
 main .description .price {
     display: flex;
     color: brown;
     font-weight: bold;
-
+    padding-top: 0.5rem;
 
 
 }
@@ -125,12 +134,43 @@ main .btn {
 
 }
 
+/* cards */
+@media screen and (min-width:575px) {
+    main h1 {
+        width: unset;
+        text-align: unset;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .card {
+        width: 40%;
+        display: inline-block;
+
+    }
+
+
+
+
+
+
+}
+
+
+
 main h2 {
     text-align: center;
     margin-inline: auto;
     color: brown;
     font-weight: bold;
 
+}
+
+@media screen and (min-width:575px) {
+    main h2 {
+        margin-inline: 1rem;
+        text-align: unset;
+    }
 }
 
 .box {
