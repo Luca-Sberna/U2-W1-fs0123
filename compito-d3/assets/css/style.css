@@ -5,7 +5,7 @@ body {
 #nav {
     display: flex;
     border-radius: 5rem;
-    background-color: rgb(255, 254, 243);
+    background-color: rgb(255, 252, 224);
     flex-wrap: wrap;
     justify-content: center;
     height: 13rem;
@@ -34,7 +34,7 @@ header img {
 
     border-radius: 3rem;
     padding: 0.7rem 1.2rem;
-    background-color: yellow;
+    background-color: rgb(244, 224, 8);
     text-align: center;
     margin-block: auto;
     color: brown;
@@ -86,7 +86,7 @@ header img {
     }
 
     header {
-        background-color: rgb(255, 254, 243);
+        background-color: rgb(255, 252, 224);
     }
 
     #nav {
@@ -133,7 +133,7 @@ main .card {
     border-radius: 2rem;
     margin-block: 1rem;
     margin-inline: 1rem;
-    background-color: rgb(255, 254, 243);
+    background-color: rgb(255, 252, 224);
     padding: 0 0 1rem 0;
 }
 
@@ -170,7 +170,7 @@ main .btn {
     display: flex;
     border-radius: 3rem;
     padding: 0.5rem 1.2rem;
-    background-color: yellow;
+    background-color: rgb(244, 224, 8);
     text-align: center;
     color: brown;
     font-weight: bold;
@@ -246,7 +246,7 @@ main h2 {
 
 .box {
     padding: 0.2rem 1.5rem;
-    background-color: rgb(255, 254, 243);
+    background-color: rgb(255, 252, 224);
     border-radius: 3rem;
     margin-inline: 1rem;
 
