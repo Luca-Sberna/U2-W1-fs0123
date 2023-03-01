@@ -131,8 +131,8 @@ main .card {
 
     flex-basis: 100%;
     border-radius: 2rem;
-    margin-block: 1rem;
-    margin-inline: 1rem;
+    margin-block: 0.4rem;
+    margin-inline: 0.3rem;
     background-color: rgb(255, 252, 224);
     padding: 0 0 1rem 0;
 }
@@ -144,7 +144,7 @@ main .card img {
 }
 
 main .description {
-    display: block;
+
     color: brown;
     max-width: 80%;
     display: flex;
@@ -189,6 +189,12 @@ main .btn {
         text-align: unset;
         margin-left: 1rem;
         font-size: 2.5rem;
+
+    }
+
+    .cards {
+        margin-left: 3.5rem;
+        max-width: 100%;
     }
 
     .card {
@@ -204,10 +210,25 @@ main .btn {
 @media screen and (min-width:767px) {
 
     .cards {
+
         display: flex;
+        margin-left: unset;
     }
 
-    main .card img {}
+    .card {
+        flex-wrap: wrap;
+        padding: unset;
+        margin-inline: unset;
+        margin: unset;
+        display: inline-block;
+        flex-basis: unset;
+    }
+
+
+
+    main .card img {
+        /*  min-width: 8rem; */
+    }
 
     main .description {
         font-size: 11px;
@@ -231,7 +252,7 @@ main .btn {
     main .btn {
         width: 4.9rem;
         font-size: 14px;
-        padding: 0.5rem 0.3rem;
+        padding: 0.4rem 0.2rem;
     }
 
 }
@@ -246,6 +267,7 @@ main h2 {
 
 }
 
+/* h box */
 @media screen and (min-width:575px) {
     main h2 {
         margin-inline: 1rem;
@@ -276,4 +298,28 @@ p {
     margin-block: auto;
     height: auto;
     padding-bottom: 2rem;
+}
+
+/* box  */
+
+@media screen and (min-width:1030px) {
+    .box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .box img {
+        margin-right: 1rem;
+        width: 49%;
+        margin-block: unset;
+        padding-top: 2rem;
+        height: unset;
+
+    }
+
+    .box div {
+
+        width: 50%;
+    }
+
 }
